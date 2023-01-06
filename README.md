@@ -1,5 +1,5 @@
-🪧 network\_banner
-=================
+🪧 cisco\_banner
+================
 
 Ensure banner for Cisco network-devices.
 
