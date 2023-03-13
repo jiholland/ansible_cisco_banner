@@ -1,18 +1,18 @@
 ---
-# tasks file for cisco_banner
+# tasks file for banner
 
-- name: Set MOTD banner
+- name: configure_cisco.nxos.nxos | Set MOTD banner.
   cisco.nxos.nxos_banner:
     banner: motd
     text: "{{ lookup('file', 'banner.cfg') }}"
     state: present
   when: ansible_facts.date_time.month != '12'
-  notify: Save nxos
+  notify: Save nxos.
 
-- name: Set xmas-banner
+- name: configure_cisco.nxos.nxos | Set xmas-banner.
   cisco.nxos.nxos_banner:
     banner: motd
     text: "{{ lookup('file', 'xmas_banner.cfg') }}"
     state: present
   when: ansible_facts.date_time.month == '12'
-  notify: Save nxos
+  notify: Save nxos.

@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: cisco_banner
+  role_name: banner
   author: Jørn Ivar Holland
   description: Ensure banner.
   license: BSD-3-Clause

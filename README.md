@@ -1,5 +1,5 @@
-🪧 cisco\_banner
-================
+🪧 banner
+==========
 
 Ensure banner for Cisco network-devices.
 
@@ -23,12 +23,12 @@ Example Playbook
 ----------------
 
     ---
-    - name: Ensure banner
+    - name: Ensure banner.
       hosts: "{{ target }}"
       gather_facts: false
 
       roles:
-        - role: cisco_banner
+        - role: banner
           tags: banner
 
 License
